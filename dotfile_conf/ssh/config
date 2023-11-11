@@ -1,0 +1,3 @@
+Host gitlab.tools.vipshop.com
+  PreferredAuthentications publickey
+  IdentityFile /apps/dat/training/lemma/env_conf_v2/dotfile_conf/ssh/id_ed25519_lemma_gitlab

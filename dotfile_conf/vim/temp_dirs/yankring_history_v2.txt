@@ -1,0 +1,100 @@
+#,v
+n,v
+i,v
+input=/apps/dat/training/malu/data/20230811_fix_baichuan/$SOURCE_FOLDER,V
+ ,v
+/apps/dat/training/malu/data/20230811/,v
+/apps/dat/training/malu/data/20230811_fix_baichuan,V
+input=/apps/dat/training/malu/data/20230811/$SOURCE_FOLDER,V
+    ''',V
+    paths.sort(key=lambda x: os.path.getmtime(os.path.join(megatron_checkpoint_dir, x))),V
+-,v
+    #paths.sort(key=lambda x: -os.path.getmtime(os.path.join(megatron_checkpoint_dir, x))),V
+iter_,v
+1,v
+/,v
+local_tmp,v
+5,v
+2,v
+0,v
+    """,V
+        if not os.path.exists(megatron_checkpoint_dir):            time.sleep(60 * 10)            continue,V
+            break        # 10分钟重跑一次        time.sleep(10 * 60),V
+    while True:,V
+        # 10分钟重跑一次        time.sleep(10 * 60),V
+megatron_checkpoint_dir,v
+llama,v
+_llama,v
+llama2-0816,v
+megatron_ziya_20230812,v
+ziya_,v
+input=/apps/dat/training/malu/data/ziya_20230812/$SOURCE_FOLDER,V
+20230824_baichuan,v
+output=/apps/dat/training/malu/data/megatron_20230824_baichuan/$SOURCE_FOLDER,V
+ziya_20230812,v
+input=/apps/dat/training/malu/data/20230824_baichuan/$SOURCE_FOLDER,V
+sh preprocess_data_from_folder.sh ,V
+zh_en_trans,v
+#sh preprocess_data_from_folder.sh zh_en_trans,V
+#sh preprocess_data_from_folder.sh paper_trans#sh preprocess_data_from_folder.sh terminology#sh preprocess_data_from_folder.sh zh_en_trans,V
+/apps/dat/training/malu/data/20230824_baichuan,v
+/$SOURCE_FOLDER,V
+20230817,v
+#input=/apps/dat/training/malu/data/20230817/$SOURCE_FOLDER,V
+,V
+sh tk.sh $prefix pile_ArXivsh tk.sh $prefix pile_Books3,V
+sh tk.sh $prefix pile_StackExchange#sh tk.sh $prefix pile_BookCorpus2,V
+sh tk.sh $prefix falcon_refineweb,V
+prefix="/apps/dat/training/malu/data/20230811/",V
+#sh tk.sh $prefix baidu_baike#sh tk.sh $prefix wudao_ecom#sh tk.sh $prefix zhihu_qa#sh tk.sh $prefix xiaohongshu_article#sh tk.sh $prefix pile_BookCorpus2#sh tk.sh $prefix poizon_articlesh tk.sh $prefix bilibili_articlesh tk.sh $prefix zhihu_articlesh tk.sh $prefix wiki_zhsh tk.sh $prefix acfun_articlesh tk.sh $prefix maigoo,V
+sh tk.sh $prefix pile_StackExchange#sh tk.sh $prefix pile_BookCorpus2sh tk.sh $prefix pile_Wikipedia_ensh tk.sh $prefix pile_ArXiv,V
+prefix="/apps/dat/training/malu/data/20230811/"#sh tk.sh $prefix baidu_baike#sh tk.sh $prefix wudao_ecom#sh tk.sh $prefix zhihu_qa#sh tk.sh $prefix xiaohongshu_article#sh tk.sh $prefix pile_BookCorpus2#sh tk.sh $prefix poizon_articlesh tk.sh $prefix bilibili_articlesh tk.sh $prefix zhihu_articlesh tk.sh $prefix wiki_zhsh tk.sh $prefix acfun_articlesh tk.sh $prefix maigooprefix="/apps/dat/training/malu/data/20230804"sh tk.sh $prefix tiger_book_zhsh tk.sh $prefix falcon_refineweb,V
+sh tk.sh $prefix pile_Books3,V
+sh tk.sh $prefix pile_StackExchange#sh tk.sh $prefix pile_BookCorpus2sh tk.sh $prefix pile_Wikipedia_en,V
+prefix="/apps/dat/training/malu/data/20230811_pile"sh tk.sh $prefix pile_Wikipedia_ensh tk.sh $prefix pile_ArXivsh tk.sh $prefix pile_Books3,V
+sh tk.sh $prefix tiger_book_zh,V
+prefix="/apps/dat/training/malu/data/20230811/"#sh tk.sh $prefix baidu_baike#sh tk.sh $prefix wudao_ecom#sh tk.sh $prefix zhihu_qa#sh tk.sh $prefix xiaohongshu_article#sh tk.sh $prefix pile_BookCorpus2#sh tk.sh $prefix poizon_articlesh tk.sh $prefix bilibili_articlesh tk.sh $prefix zhihu_articlesh tk.sh $prefix wiki_zhsh tk.sh $prefix acfun_articlesh tk.sh $prefix maigoo,V
+prefix="/apps/dat/training/malu/data/20230804"sh tk.sh $prefix tiger_book_zhsh tk.sh $prefix falcon_refinewebprefix="/apps/dat/training/malu/data/20230811_pile"sh tk.sh $prefix pile_StackExchange#sh tk.sh $prefix pile_BookCorpus2sh tk.sh $prefix pile_Wikipedia_ensh tk.sh $prefix pile_ArXivsh tk.sh $prefix pile_Books3,V
+#sh tk.sh $prefix baidu_baike#sh tk.sh $prefix wudao_ecom#sh tk.sh $prefix zhihu_qa#sh tk.sh $prefix xiaohongshu_article#sh tk.sh $prefix pile_BookCorpus2#sh tk.sh $prefix poizon_article,V
+,V
+prefix="/apps/dat/training/malu/data/20230804"sh tk.sh $prefix tiger_book_zhsh tk.sh $prefix falcon_refineweb,V
+pile_BookCorpus2,v
+pile_StackExchange,v
+sh tk.sh $prefix pile_StackExchangesh tk.sh $prefix pile_BookCorpus2,V
+11_pile,v
+prefix="/apps/dat/training/malu/data/20230811_pile",V
+#########,1
+##sh tk.sh $prefix baidu_baike,V
+sh tk.sh $prefix wudao_ecom,V
+sh tk.sh $prefix  ,V
+baidu_baike ,v
+baidu_baike,v
+--output-prefix ,v
+--input ,v
+  --input /apps/dat/training/malu/data/20230811/baidu_baike/ \  --output-prefix /apps/dat/training/malu/data/20230811_baichuan_neox/baidu_baike/baidu_baike \,V
+$,v
+        print(sentences),V
+s,v
+[key],v
+[,v
+llama ,v
+    --model_root /apps/dat/training/tingkuanpei/Models \,V
+#--model_root /apps/dat/file/llm/model \,V
+#--model_root /apps/dat/training/tingkuanpei/Models \,V
+model_name="llama2-13B-hf",V
+#model_name="baichuan-13B-2048-iter0500",V
+cuda_id=$1#model_name=$2,V
+cuda_id=$1#model_name=$2#model_name="baichuan-13B-2048-iter0500"#model_name="Baichuan-13B-Base"model_name="llama2-13B-hf"shot=5log_path="/apps/dat/training/lemma/eval_res/log/"$model_name"_shot_"$shot"_0823.eceval.log"echo $log_pathecho $cuda_id#--model_root /apps/dat/training/lemma/Models/ \#--model_root /apps/dat/file/llm/model \#--model_root /apps/dat/training/lemma/Models/ \#--model_type baichuan \#--model_root /apps/dat/training/tingkuanpei/Models \CUDA_VISIBLE_DEVICES=$cuda_id python eceval_0823.py \    --model_root /apps/dat/training/tingkuanpei/Models \    --out_root /apps/dat/training/lemma/eval_res/ec-eval-0823 \    --model_name $model_name \    --model_type llama \    --shot $shot \    --data_path /home/llms/ecommerce-eval/data/data_split_0823/\    --is_shuf false \    > $log_path 2>&1 ,V
+&,v
+v,v
+'箱包',v
+'bags',v
+15,v
+ --data_path /apps/dat/training/lemma/ceval-exam \,V
+    --data_path /home/llms/ecommerce-eval/data/data_split_0815/\,V
+3,v
+27000,v
+2700,v
+000,v
+27,v
+max128-nosample,v
